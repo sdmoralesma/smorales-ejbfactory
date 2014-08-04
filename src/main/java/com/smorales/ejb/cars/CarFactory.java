@@ -9,8 +9,6 @@ import javax.enterprise.inject.Produces;
 @Stateless
 public class CarFactory  {
 
-    private static boolean condition = true;
-
     @EJB(beanName = "Ferrari")
     Ferrari ferrari;
 
