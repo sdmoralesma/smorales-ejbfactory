@@ -26,14 +26,4 @@ public class CarFactory  {
     public Car pimpMyRideB() {
         return lamborgini;
     }
-
-
-//        CarModel.Brand brand = point.getAnnotated().getAnnotation(CarModel.class).value();
-//        switch (brand) {
-//            case FERRARI:
-//            case LAMBORGINI:
-//                return lamborgini;
-//            default:
-//                throw new IllegalArgumentException("Select a type of Car");
-//        }
 }
