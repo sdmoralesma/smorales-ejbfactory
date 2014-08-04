@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 public class CarServlet extends HttpServlet {
 
     @Inject
-    @CarModel(CarModel.Brand.FERRARI)
+    @CarModel(CarModel.Brand.LAMBORGINI)
     Car car;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

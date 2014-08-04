@@ -7,11 +7,11 @@ import javax.enterprise.inject.Produces;
 @Stateless
 public class CarFactory {
 
-    @EJB(beanName = "Ferrari")
-    Ferrari ferrari;
+    @EJB(beanName = "Ferrari") // You can use the beanName or mappedName to lookup for the EJBs
+    Car ferrari;
 
     @EJB(beanName = "Lamborgini")
-    Lamborgini lamborgini;
+    Car lamborgini;
 
     @Produces
     @CarModel(CarModel.Brand.FERRARI)
