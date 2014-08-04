@@ -1,13 +1,11 @@
 package com.smorales.ejb.cars;
 
 import javax.ejb.EJB;
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
 import javax.ejb.Stateless;
 import javax.enterprise.inject.Produces;
 
 @Stateless
-public class CarFactory  {
+public class CarFactory {
 
     @EJB(beanName = "Ferrari")
     Ferrari ferrari;
@@ -15,12 +13,14 @@ public class CarFactory  {
     @EJB(beanName = "Lamborgini")
     Lamborgini lamborgini;
 
-    @Produces @CarModel(CarModel.Brand.FERRARI)
+    @Produces
+    @CarModel(CarModel.Brand.FERRARI)
     public Car pimpMyRideA() {
         return ferrari;
     }
 
-    @Produces @CarModel(CarModel.Brand.LAMBORGINI)
+    @Produces
+    @CarModel(CarModel.Brand.LAMBORGINI)
     public Car pimpMyRideB() {
         return lamborgini;
     }
