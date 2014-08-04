@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 @WebServlet(name = "CarServlet", urlPatterns = {"/CarServlet"})
 public class CarServlet extends HttpServlet {
 
-    @Inject @CarModel(CarModel.Brand.LAMBORGINI)
+    @Inject @CarModel(CarModel.Brand.FERRARI)
     Car car;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
